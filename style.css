@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* <!-- hero section --> */
+.hero{
+    height: 90vh;
+    position:relative;
+    
+}
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    .hero>div{
+        position:absolute;
+        top:30vh;
+        left:10vh;
+        background: rgba(126, 112, 112, 0.445);
+        width:450px;
+        padding:1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+
+.down{
+    
+ font-size: 5rem;
+    color: orangered;
+    position:absolute;
+    bottom:100px;
+    left: 50vw;
+    transform:rotate(90deg);
+    animation: goDown 1s infinite;
+}
+@keyframes goDown {
+    0%{
+        bottom:100px;
+        left:50vw;
+    }
+    100%{
+        bottom: 10px;
+    }
+    
+}
+
+        /* <!-- navbar --> */
+        nav{
+            background-color: black;
+            color:rgba(205, 178, 26, 0.578);
+
+        }
+        nav>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            padding: 0.5rem 0;
+        }
+        nav ul{
+            display: flex;
+            
+        }
+        nav ul li{
+            list-style-type: none;
+            margin-left: 1.3rem;
+        }
+        nav ul li:hover{
+            color:red;
+            transform:scale(1.3);
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        /* <!-- paragraphs --> */
+
+        /* <!-- image secion --> */
+        [class^="img"]{
+        /* .img1,.img2,.img3,.img4{ */
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            background:black;
+            color:white;
+            font-size: 2rem;
+            padding: 1.4rem, 5rem;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            background-attachment: fixed;
+        }
+        .img1{
+            background: url(./background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .img2{
+            background: url(./keyboard.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .img3{
+            background: url(./background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .img4{
+            background: url(./keyboard.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+         /* <!-- paragraphs --> */
+
+        /* <!-- image secion --> */
+
+        /* <!-- footer --> */
+        footer{
+            background: black;
+            color: wheat;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
